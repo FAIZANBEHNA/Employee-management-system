@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Database Migration</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#172033}
+    .wrap{max-width:720px;margin:70px auto;padding:24px}
+    .card{background:#fff;border:1px solid #e5e9f2;border-radius:16px;padding:32px;box-shadow:0 8px 30px rgba(20,30,50,.06)}
+    h1{margin:0 0 10px;font-size:28px}
+    p{color:#687386;line-height:1.6}
+    button{border:0;border-radius:9px;padding:12px 18px;background:#2563eb;color:#fff;font-weight:700;cursor:pointer}
+    button:disabled{opacity:.6;cursor:not-allowed}
+    pre{display:none;margin-top:20px;padding:16px;border-radius:10px;background:#f3f5f8;white-space:pre-wrap}
+    .note{font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Database Migration</h1>
+      <p>Click the button to create the required tables and seed the default departments.</p>
+      <p class="note">Database credentials are read securely from the backend <code>.env</code> file.</p>
+      <button id="run">Run Database Migration</button>
+      <pre id="result"></pre>
+    </div>
+  </div>
+<script>
+  const button = document.getElementById("run");
+  const result = document.getElementById("result");
+
+  button.addEventListener("click", async () => {
+    button.disabled = true;
+    result.style.display = "block";
+    result.textContent = "Running migration...";
+
+    try {
+      const response = await fetch("/migration/run", { method: "POST" });
+      const data = await response.json();
+      result.textContent = data.message || JSON.stringify(data, null, 2);
+    } catch (error) {
+      result.textContent = "Migration request failed. Check that the backend is running.";
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>
+</body>
+</html>

@@ -15,3 +15,8 @@ This project contains both the frontend and backend code merged into the root di
 ├── package.json      # Node.js dependencies & scripts
 ├── server.js         # Backend server entry point
 └── README.md         # Project documentation
+
+<h2>🛠️ Tech Stack </h2>
+Frontend: React, HTML, CSS, JavaScript
+
+Backend: Node.js, Express, GraphQL

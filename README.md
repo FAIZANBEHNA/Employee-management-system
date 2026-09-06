@@ -2,7 +2,7 @@
 
 A full-stack Employee Management application built with React, Node.js, Express, GraphQL, and MySQL.
 
-## 📁 Project Structure
+## Project Structure
 
 This project contains both the frontend and backend code merged into the root directory:
 
@@ -16,7 +16,18 @@ This project contains both the frontend and backend code merged into the root di
 ├── server.js         # Backend server entry point
 └── README.md         # Project documentation
 
-🛠️ **Tech Stack** 
+Prerequisites
+
+Make sure you have the following installed on your machine:
+
+Node.js (v14 or higher)
+
+MySQL
+
+Tech Stack
+
 Frontend: React, HTML, CSS, JavaScript
 
 Backend: Node.js, Express, GraphQL
+
+Database: MySQL

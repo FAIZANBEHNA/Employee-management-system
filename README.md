@@ -55,15 +55,11 @@ mini-employee-management-backend/
 ├── graphql/
 │   ├── schema.js              # GraphQL type definitions and SDL schema string
 │   └── resolvers.js           # Business logic, query resolvers, and mutations
-├── migration/
-│   └── migration.js           # Schema migration and database setup script
-├── scripts/
-│   └── migrate.js             # Alternative schema migration/seeding script runner
+├── scripts/                   # seeding script runner 
 ├── public/
 │   ├── index.html             # Frontend HTML fallback / landing page
-│   └── migration.html         # Web interface for triggering migrations manually
 ├── .env                       # Environment variables (PORT, DB credentials, FRONTEND_URL)
 ├── package.json               # Project manifest, dependencies, and npm scripts
-└── server.js                  # Express server entry point with GraphQL & migration endpoints
+└── server.js                  # Express server entry point with GraphQL & endpoints
 
 

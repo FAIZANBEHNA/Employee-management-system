@@ -8,7 +8,7 @@ This project contains both the frontend and backend code merged into the root di
 
 ```text
 ├── db/               # Database connections and configurations
-├── graphql/          # GraphQL schemas and resolvers
+├── graphql/          # GraphQL schemas and resolvers    
 ├── public/           # Static assets and HTML templates
 ├── src/              # React frontend source files
 ├── .gitignore        # Git ignore configurations
@@ -16,7 +16,7 @@ This project contains both the frontend and backend code merged into the root di
 ├── server.js         # Backend server entry point
 └── README.md         # Project documentation
 
-Prerequisites
+Prerequisites 
 
 Make sure you have the following installed on your machine:
 

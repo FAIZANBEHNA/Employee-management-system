@@ -31,3 +31,37 @@ Frontend: React, HTML, CSS, JavaScript
 Backend: Node.js, Express, GraphQL
 
 Database: MySQL
+
+Frontend
+mini-employee-management-frontend/
+├── public/
+├── src/
+│   ├── api/
+│   │   └── graphql.js           # Lightweight fetch wrapper for GraphQL POST requests
+│   ├── components/
+│   │   ├── EmployeeForm.js      # Form for adding & editing employees with validation
+│   │   ├── EmployeeList.js      # Table with search filters, actions, and pagination
+│   │   └── Sidebar.js           # Navigation bar component
+│   ├── App.js                   # Main application state & dashboard container
+│   ├── index.css                # Custom CSS design system
+│   └── index.js                 # React entry point
+└── package.json
+
+Backend
+Plaintext
+mini-employee-management-backend/
+├── db/
+│   └── connection.js          # MySQL2 connection pool & connection health-check
+├── graphql/
+│   ├── schema.js              # GraphQL type definitions and SDL schema string
+│   └── resolvers.js           # Business logic, query resolvers, and mutations
+├── migration/
+│   └── migration.js           # Schema migration and database setup script
+├── scripts/
+│   └── migrate.js             # Alternative schema migration/seeding script runner
+├── public/
+│   ├── index.html             # Frontend HTML fallback / landing page
+│   └── migration.html         # Web interface for triggering migrations manually
+├── .env                       # Environment variables (PORT, DB credentials, FRONTEND_URL)
+├── package.json               # Project manifest, dependencies, and npm scripts
+└── server.js                  # Express server entry point with GraphQL & migration endpoints

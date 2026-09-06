@@ -65,3 +65,8 @@ mini-employee-management-backend/
 ├── .env                       # Environment variables (PORT, DB credentials, FRONTEND_URL)
 ├── package.json               # Project manifest, dependencies, and npm scripts
 └── server.js                  # Express server entry point with GraphQL & migration endpoints
+<img width="1909" height="960" alt="Screenshot 2026-09-06 103354" src="https://github.com/user-attachments/assets/3d8ac2c5-aea1-4948-b63e-4d7db6af068d" />
+<img width="1909" height="960" alt="Screenshot 2026-09-06 103354" src="https://github.com/user-attachments/assets/1fe6362a-1266-4242-8555-2ec475df67a9" />
+![Uploading Screenshot 2026-09-06 103354.png…]()
+
+
